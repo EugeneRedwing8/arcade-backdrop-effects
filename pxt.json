@@ -1,0 +1,29 @@
+{
+    "name": "backdrop-effects",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "backdrop-effects.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "main.py",
+        "factory.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.55",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
