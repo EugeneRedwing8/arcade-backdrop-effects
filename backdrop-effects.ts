@@ -6,7 +6,7 @@ namespace effects{
             factory.setDirection(360, 0);
             factory.setSpeed(200);
             // render behind tile map
-            source.z = -4;
+            source.z = 4;
             return source
         });
 
@@ -16,7 +16,7 @@ namespace effects{
         const source = new particles.ParticleSource(anchor, particlesPerSecond, factory);
 
         // render behind tile map
-        source.z = -2;
+        source.z = 6;
         return source;
     });
     //% fixedInstance whenUsed block="lightning"
@@ -26,5 +26,15 @@ namespace effects{
         factory.setSpeed(30);
         source.z = -3
         return source;
+    });
+    //% fixedInstance whenUsed block="ash"
+    export const ash = new ScreenEffect(0, 7500, 0, function (anchor: particles.ParticleAnchor, particlesPerSecond: number) {
+        const factory = new particles.AshParticleFactory(160);
+        const source = new particles.ParticleSource(anchor, particlesPerSecond, factory);
+        factory.setDirection(randint(0, 360), randint(0, 360));
+        factory.setSpeed(25);
+        // render behind tile map
+        source.z = 4;
+        return source
     });
 }
